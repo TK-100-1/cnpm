@@ -14,12 +14,15 @@ import MentorClassDetail from "../pages/mentor/classes";
 import MentorStudentList from "../pages/mentor/studentList";
 import MentorTeachingSchedule from "../pages/mentor/teachingSchedule";
 import MentorOpenClass from "../pages/mentor/openClass";
+import AccountMentor from '../pages/mentor/AccountMentor';
 
 // Pages — Mentee
 import MenteeHome from "../pages/mentee/menteeHome";
 import MenteeClasses from "../pages/mentee/classes";
 import MenteeExamSchedule from "../pages/mentee/examSchedule";
 import MenteeRegisterClass from "../pages/mentee/register";
+import AccountMentee from '../pages/mentee/AccountMentee';
+import ScheduleMentee from '../pages/mentee/ScheduleMentee';
 
 // Pages — Coordinator
 import CoordinatorHome from "../pages/coordinator/coordinatorHome";
@@ -70,6 +73,7 @@ const router = createBrowserRouter([
       { path: "classes/:id/students", element: <MentorStudentList /> },
       { path: "teaching-schedule", element: <MentorTeachingSchedule /> },
       { path: "open-class", element: <MentorOpenClass /> },
+      { path: 'account', element: <AccountMentor /> },
     ],
   },
 
@@ -88,6 +92,8 @@ const router = createBrowserRouter([
       { path: "classes", element: <MenteeClasses /> },
       { path: "exam-schedule", element: <MenteeExamSchedule /> },
       { path: "register", element: <MenteeRegisterClass /> },
+      { path: 'profile', element: <AccountMentee /> },
+      { path: 'schedule', element: <ScheduleMentee /> },
     ],
   },
 
