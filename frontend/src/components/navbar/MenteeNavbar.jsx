@@ -17,14 +17,14 @@ export default function MenteeNavbar() {
           <img src={logo} alt="Logo" className="h-10 w-10 mr-6" />
 
           {/* Menu */}
-          <div className="flex space-x-8 text-sm font-medium">
+          <div className="flex text-sm font-normal h-14">
             <NavLink
               to="/mentee"
               end
               className={({ isActive }) =>
-                isActive
-                  ? 'px-3 py-2 bg-blue-700 rounded'
-                  : 'px-3 py-2 hover:bg-blue-600 rounded'
+                `flex items-center px-6 h-full transition-colors duration-200 ${
+                  isActive ? 'bg-[#0057C2]' : 'bg-[#007FA2] hover:bg-[#0057C2]'
+                }`
               }
             >
               Trang chủ
@@ -33,9 +33,9 @@ export default function MenteeNavbar() {
             <NavLink
               to="/mentee/classes"
               className={({ isActive }) =>
-                isActive
-                  ? 'px-3 py-2 bg-blue-700 rounded'
-                  : 'px-3 py-2 hover:bg-blue-600 rounded'
+                `flex items-center px-6 h-full transition-colors duration-200 ${
+                  isActive ? 'bg-[#0057C2]' : 'bg-[#007FA2] hover:bg-[#0057C2]'
+                }`
               }
             >
               Danh sách lớp học
@@ -44,9 +44,9 @@ export default function MenteeNavbar() {
             <NavLink
               to="/mentee/exam-schedule"
               className={({ isActive }) =>
-                isActive
-                  ? 'px-3 py-2 bg-blue-700 rounded'
-                  : 'px-3 py-2 hover:bg-blue-600 rounded'
+                `flex items-center px-6 h-full transition-colors duration-200 ${
+                  isActive ? 'bg-[#0057C2]' : 'bg-[#007FA2] hover:bg-[#0057C2]'
+                }`
               }
             >
               Lịch thi
@@ -55,9 +55,9 @@ export default function MenteeNavbar() {
             <NavLink
               to="/mentee/register"
               className={({ isActive }) =>
-                isActive
-                  ? 'px-3 py-2 bg-blue-700 rounded'
-                  : 'px-3 py-2 hover:bg-blue-600 rounded'
+                `flex items-center px-6 h-full transition-colors duration-200 ${
+                  isActive ? 'bg-[#0057C2]' : 'bg-[#007FA2] hover:bg-[#0057C2]'
+                }`
               }
             >
               Đăng kí lớp học
