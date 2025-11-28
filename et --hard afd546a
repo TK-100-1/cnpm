@@ -1,0 +1,20 @@
+[33m2c70daa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mDanh_AsessmentPage[m[33m, [m[1;31morigin/Danh_AsessmentPage[m[33m)[m Update App.css
+[33m869cf6a[m Delete frontend/src/pages directory
+[33ma13d656[m Delete frontend/src/layouts directory
+[33me1f6ba5[m Delete frontend/src/data directory
+[33mfde31bc[m Delete frontend/src/routers directory
+[33mb81915b[m Delete frontend/src/components directory
+[33mafd546a[m Refactor CSS with new styles and variables
+[33m39ed170[m Update main.jsx
+[33m61a931f[m Add files via upload
+[33m7d2fdcf[m Update Data.js
+[33mf2a9891[m Move mock data to separate file
+[33m1afb326[m Update AssessmentPage.jsx
+[33m1f4c2a8[m Add notification and message icons to AttendancePage
+[33m5992bad[m Enhance OverviewPage with download feature
+[33m8b115a9[m Add files via upload
+[33mfcae88d[m Refactor App.css with layout and style updates
+[33m94c320e[m Implement routing for multiple pages in App component
+[33m8dc05f1[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge pull request #1 from TK-100-1/Xuan/mentorClassDetail
+[33m4057565[m[33m ([m[1;31morigin/Xuan/mentorClassDetail[m[33m)[m feat: Add mentor class detail page - Add student list page, Add component EditClassInfoModal, Add mock data
+[33m27ed9fb[m first commit
