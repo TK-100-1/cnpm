@@ -78,8 +78,16 @@ export default function MenteeNavbar() {
           </button>
 
           {/* User Icon */}
+<<<<<<< HEAD
           <Link to="/mentee/profile" className="hover:text-gray-200">
             <UserCircleIcon className="h-7 w-7" />
+=======
+          {/* <button className="hover:text-gray-200">
+            <UserCircleIcon className="h-7 w-7" />
+          </button> */}
+          <Link to="/mentee/profile" className="hover:text-gray-200">
+            <UserCircleIcon className="h-7 w-7" />
+>>>>>>> BaoTrong
           </Link>
         </div>
       </div>
