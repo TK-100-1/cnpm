@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import {
   BellIcon,
   ChatBubbleLeftEllipsisIcon,
@@ -78,9 +78,9 @@ export default function MentorNavbar() {
           </button>
 
           {/* User */}
-          <button className="hover:text-gray-200">
+          <Link to="/mentor/account" className="hover:text-gray-200">
             <UserCircleIcon className="h-7 w-7" />
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
