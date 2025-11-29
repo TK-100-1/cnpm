@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import {
   BellIcon,
   ChatBubbleLeftEllipsisIcon,
@@ -42,14 +42,14 @@ export default function MenteeNavbar() {
             </NavLink>
 
             <NavLink
-              to="/mentee/exam-schedule"
+              to="/mentee/schedule" 
               className={({ isActive }) =>
                 isActive
                   ? 'px-3 py-2 bg-blue-700 rounded'
                   : 'px-3 py-2 hover:bg-blue-600 rounded'
               }
             >
-              Lịch thi
+              Lịch học
             </NavLink>
 
             <NavLink
@@ -78,9 +78,12 @@ export default function MenteeNavbar() {
           </button>
 
           {/* User Icon */}
-          <button className="hover:text-gray-200">
+          {/* <button className="hover:text-gray-200">
             <UserCircleIcon className="h-7 w-7" />
-          </button>
+          </button> */}
+          <Link to="/mentee/profile" className="hover:text-gray-200">
+            <UserCircleIcon className="h-7 w-7" />
+          </Link>
         </div>
       </div>
     </nav>
