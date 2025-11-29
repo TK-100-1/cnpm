@@ -17,7 +17,8 @@ import MentorOpenClass from "../pages/mentor/openClass";
 
 // Pages — Mentee
 import MenteeHome from "../pages/mentee/menteeHome";
-import MenteeClasses from "../pages/mentee/classes";
+import MenteeClassesList from "../pages/mentee/MenteeClassesList";
+import MenteeClassDetail from "../pages/mentee/classes";
 import MenteeExamSchedule from "../pages/mentee/examSchedule";
 import MenteeRegisterClass from "../pages/mentee/register";
 
@@ -85,7 +86,9 @@ const router = createBrowserRouter([
     ),
     children: [
       { path: "", element: <MenteeHome /> },
-      { path: "classes", element: <MenteeClasses /> },
+      { path: "classes", element: <MenteeClassesList /> },
+      // đợi classes của mentee làm xong 
+      { path: "classes/:id", element: <MenteeClassDetail /> },
       { path: "exam-schedule", element: <MenteeExamSchedule /> },
       { path: "register", element: <MenteeRegisterClass /> },
     ],

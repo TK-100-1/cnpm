@@ -9,22 +9,22 @@ import logo from '../../assets/logo-bach-khoa.png';
 
 export default function CoordinatorNavbar() {
   return (
-    <nav className="w-full bg-[#0388b4] text-white shadow-md">
-      <div className="w-full mx-auto flex items-center justify-between h-[58px]">
+    <nav className="w-full bg-[#007FA2] text-white px-6 shadow-md">
+      <div className="w-full mx-auto flex items-center justify-between h-14">
         {/* LEFT SIDE: Logo + Menu */}
         <div className="flex items-center">
           {/* Logo */}
-          <img src={logo} alt="Logo12" className="ml-[32px] w-[39px] h-10 object-cover" />
+          <img src={logo} alt="Logo12" className="h-10 w-10 mr-6" />
 
           {/* Menu */}
-          <div className="ml-[24px] flex text-base font-semibold">
+          <div className="flex space-x-8 text-sm font-medium">
             <NavLink
               to="/coordinator"
               end
               className={({ isActive }) =>
                 isActive
-                  ? 'w-[120px] h-[58px] flex items-center justify-center bg-[#044cc8]'
-                  : 'w-[120px] h-[58px] flex items-center justify-center hover:bg-[#0477a1]'
+                  ? 'px-3 py-2 bg-blue-700 rounded'
+                  : 'px-3 py-2 hover:bg-blue-600 rounded'
               }
             >
               Trang chủ
@@ -34,8 +34,8 @@ export default function CoordinatorNavbar() {
               to="/coordinator/manage"
               className={({ isActive }) =>
                 isActive
-                  ? "w-[120px] h-[58px] flex items-center justify-center bg-[#044cc8]"
-                  : "w-[120px] h-[58px] flex items-center justify-center hover:bg-[#0477a1]"
+                  ? 'px-3 py-2 bg-blue-700 rounded'
+                  : 'px-3 py-2 hover:bg-blue-600 rounded'
               }
             >
               Quản lý
@@ -45,8 +45,8 @@ export default function CoordinatorNavbar() {
               to="/coordinator/complaints"
               className={({ isActive }) =>
                 isActive
-                  ? "w-[120px] h-[58px] flex items-center justify-center bg-[#044cc8]"
-                  : "w-[120px] h-[58px] flex items-center justify-center hover:bg-[#0477a1]"
+                  ? 'px-3 py-2 bg-blue-700 rounded'
+                  : 'px-3 py-2 hover:bg-blue-600 rounded'
               }
             >
               Khiếu nại
@@ -56,8 +56,8 @@ export default function CoordinatorNavbar() {
               to="/coordinator/manual-class"
               className={({ isActive }) =>
                 isActive
-                  ? "w-[170px] h-[58px] flex items-center justify-center bg-[#044cc8]"
-                  : "w-[170px] h-[58px] flex items-center justify-center hover:bg-[#0477a1]"
+                  ? 'px-3 py-2 bg-blue-700 rounded'
+                  : 'px-3 py-2 hover:bg-blue-600 rounded'
               }
             >
               Ghép lớp thủ công
@@ -67,8 +67,8 @@ export default function CoordinatorNavbar() {
               to="/coordinator/report"
               className={({ isActive }) =>
                 isActive
-                  ? "w-[170px] h-[58px] flex items-center justify-center bg-[#044cc8]"
-                  : "w-[170px] h-[58px] flex items-center justify-center hover:bg-[#0477a1]"
+                  ? 'px-3 py-2 bg-blue-700 rounded'
+                  : 'px-3 py-2 hover:bg-blue-600 rounded'
               }
             >
               Báo cáo hoạt động
@@ -76,24 +76,21 @@ export default function CoordinatorNavbar() {
           </div>
         </div>
 
-        {/* Push content to right margin */}
-        <div className="flex-1" />
-
         {/* RIGHT SIDE: Icons */}
-        <div className="flex items-center">
-          {/* Bell (Icon 1) */}
-          <button className="hover:text-gray-200 mr-[18px]">
-            <BellIcon className="h-[25px] w-[25px]" />
+        <div className="flex items-center space-x-6">
+          {/* Bell */}
+          <button className="hover:text-gray-200">
+            <BellIcon className="h-6 w-6" />
           </button>
 
-          {/* Message (Icon 2) */}
-          <button className="hover:text-gray-200 mr-[18px]">
-            <ChatBubbleLeftEllipsisIcon className="h-[25px] w-[25px]" />
+          {/* Message */}
+          <button className="hover:text-gray-200">
+            <ChatBubbleLeftEllipsisIcon className="h-6 w-6" />
           </button>
 
-          {/* User Icon (Icon 3) */}
-          <button className="hover:text-gray-200 mr-[18px]">
-            <UserCircleIcon className="h-[40px] w-[40px]" />
+          {/* User Icon */}
+          <button className="hover:text-gray-200">
+            <UserCircleIcon className="h-7 w-7" />
           </button>
         </div>
       </div>
